@@ -1,0 +1,13 @@
+29.04
+
+Super mi poszlo. Zrobilem web scraping z sofascore. Teraz pytanie:
+
+- jak to zautomatyzowac aby wysylalo request co np godzine?
+
+Plus sprawdzic wszystkie po kolei (name_1, country_1.... w deblu jest inaczej!)
+
+Sprawdzilem wszystkie po kolej, 
+teraz jedynie moge to upieknic, zeby wszedzie pokazywalo narodowosc, i jak trwa pierwszy set, to zeby dalej nie pokazywalo 
+wyniku.
+
+Ale najpierw chche popracowac nad automatyzacja.
