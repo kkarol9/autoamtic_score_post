@@ -6,10 +6,13 @@ with open ('tenis.json') as f:
 
 #tournament = jsondata['events'][0]['tournament']['name']
 #print(tournament)
+in_progress = []
+finished = []
 
 for match in jsondata['events']:
 
     tournament = match['tournament']['name']
+    id = match['id']
     #round = match['roundInfo'].get('name', 'Runda nieznana')
     name_1 = match['homeTeam']['name']
     #country_1 = match['homeTeam']['country']['name']
@@ -37,7 +40,24 @@ for match in jsondata['events']:
     #score_2_set_3 = match['awayScore']['period3']
     score_2_set_3 = match['awayScore'].get('period3', '')
 
+    status = match['status']['type']
 
-    
-    print(tournament, "|", name_1, country_1, " - ", name_2, country_2, score_1_set_1, ":", score_2_set_1,   
-        score_1_set_2, ":", score_2_set_2, score_1_set_3, ":", score_2_set_3)
+    print(tournament, id, "|", name_1, country_1, " - ", name_2, country_2, score_1_set_1, ":", score_2_set_1,   
+        score_1_set_2, ":", score_2_set_2, score_1_set_3, ":", score_2_set_3, status)
+
+"""
+    if status == 'inprogress':
+        in_progress.extend([tournament, id, "|", name_1, country_1, " - ", name_2, country_2, score_1_set_1, ":", score_2_set_1,   
+            score_1_set_2, ":", score_2_set_2, score_1_set_3, ":", score_2_set_3, status])
+
+    if status == 'finished':
+        finished.extend([tournament, id, "|", name_1, country_1, " - ", name_2, country_2, score_1_set_1, ":", score_2_set_1,   
+            score_1_set_2, ":", score_2_set_2, score_1_set_3, ":", score_2_set_3, status])
+
+
+
+for i in range(0, len(finished), 18):
+    print(finished[i:i + 18])
+
+"""
+
