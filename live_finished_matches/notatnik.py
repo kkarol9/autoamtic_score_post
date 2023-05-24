@@ -34,3 +34,10 @@ id 3 finished
 wszucam [id1, id2] do listy
 sprawdzam status id 1, id2
 jesli sie zmienil to tworze post i usuwam z listy
+
+
+8.05
+
+Wypisuje mi zakonczone mecze, aale tylko tych ktore byly in progress, ale to w sumie spoko wystaarczy mi. Teraz musze zrobic tak, by ten program odpala sie co 2h.
+
+Zrobie to w nowym folderze aplikacjaa_live_finished
