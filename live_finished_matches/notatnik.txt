@@ -41,3 +41,10 @@ jesli sie zmienil to tworze post i usuwam z listy
 Wypisuje mi zakonczone mecze, aale tylko tych ktore byly in progress, ale to w sumie spoko wystaarczy mi. Teraz musze zrobic tak, by ten program odpala sie co 2h.
 
 Zrobie to w nowym folderze aplikacjaa_live_finished
+
+
+
+24.05
+
+Musze zrobic tak, by program tenis_live_inprogress_to_finished.py zwracal wszystkie wyniki finished.
+A przy nastepnym przejsciu tego prograamu (np. za 2h) juz wrzucal nowe nazwiska
