@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "https://api.sofascore.com/api/v1/sport/tennis/scheduled-events/2023-05-30"
+url = "https://api.sofascore.com/api/v1/sport/tennis/scheduled-events/2023-06-06"
 
 payload = ""
 headers = {
